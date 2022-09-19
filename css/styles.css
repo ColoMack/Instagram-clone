@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+}
+/*sign up styles*/
+
+.signupBox{
+    border: solid 1px rgb(223, 223, 223);
+    height: auto;
+    width: 350px;
+    background-color: #fafafa;
+    position: absolute;
+    right: 37%;
+    top: 5%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signupBox img{
+    width: 200px;
+    height: auto;
+}
+.signupBox p{
+    text-align: center;
+    font-weight: 580;
+    color: rgb(123, 123, 123);
+}
+.signupFB{
+    background-color: #1da1f2;
+    border: none;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signupBox input, .loginBox input{
+    margin: 5px;
+    height: 28px;
+    width: 300px;
+    border-radius: 5px;
+    border: solid 1px rgb(185, 185, 185);
+    padding: 4px;
+}
+.signupBox .terms, .loginBox .terms{
+    font-size: 70%;
+}
+.signupBox .terms a{
+    text-decoration: none;
+    color: #1da1f2;
+}
+.signupBox .signUp, .loginBox .login{
+    width: 310px;
+    height: 30px;
+    background-color: #1da1f2;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 5px;
+    cursor: pointer;
+}
+.signupBox .already a, .loginBox .forgot, .loginBox .dont{
+    text-decoration: none;
+    color: #1da1f2;
+}
+
+/*log in styles*/
+
+.loginBox{
+    border: solid 1px rgb(223, 223, 223);
+    height: auto;
+    width: 350px;
+    background-color: #fafafa;
+    position: absolute;
+    right: 37%;
+    top: 5%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginBox img{
+    width: 200px;
+    height: auto;
+}  
+/* for password reset */
+
+.passwordResetBox{
+    border: solid 1px rgb(223, 223, 223);
+    height: auto;
+    width: 350px;
+    background-color: #fafafa;
+    position: absolute;
+    right: 37%;
+    top: 5%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.passwordResetBox img{
+    width: 200px;
+    height: auto;
+}
+
+/* for home page */
+
+.topbar{
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 100;
+    border: none;
+    display: flex;
+    height: 3.5rem;
+    width: 100%;
+    align-items: center;
+    gap: 4.8rem;
+}
+.topbar .instagramLogo{
+    margin-left: 10.3rem;
+}
+#topbar{
+    border-bottom: solid 1px rgb(210, 210, 210);
+}
+.topbar .searchInput input{
+    border: none;
+    background-color: #f1f1f1;
+    height: 2rem;
+    border-radius: 7px;
+    width: 15.8rem;
+    padding-left: 15px;
+    color: black;
+    font-size: 105%;
+}
+.searchInput input:placeholder-shown{
+    font-weight: 300;
+}
+.topbar .topIcons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.topIcons img{
+    height: 27px;
+    width: 27px;
+}
+#newpostbtn{
+    cursor: pointer;
+}
+
+.homeContainer{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 7.4%;
+    background-color: #f4f4f4;
+    border: solid 1px red;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 2.5%;
+    
+}
+
+
+.leftinner{
+    display: flex;
+    flex-direction: column;
+    border: none green;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 17%;
+}
+.rightinner{
+    display: flex;
+    flex-direction: column;
+    border: solid red;
+    width: fit-content;
+    height: fit-content;
+}
+.leftinner .homepagestories{
+   background-color: #ffffff; 
+   display: flex;
+   flex-direction: row;
+   border: solid 1px rgb(210, 210, 210);
+   height: 3rem;
+   width: 26.9rem;
+   border-radius: 10px;
+   gap: 1rem;
+   padding:1.5rem;
+   padding-left: 0.8rem;
+   padding-right: 0.8rem;
+   align-items: center;
+   overflow: auto;
+   overflow-y: hidden;
+   flex-wrap: nowrap;
+   
+}
+.leftinner .homepagestories::-webkit-scrollbar{
+    display: none;
+}
+.leftinner .homepagestories div{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );;
+    border-style: double;
+}
+.leftinner .postssection{
+    border: solid 1px rgb(210, 210, 210);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 28.5rem;
+    height: 40rem;
+}
+
+.postssection .section1{
+    display: flex;
+    flex-direction: row;
+    border: solid 1px;
+    height: fit-content;
+    align-items: center;
+    padding: 2.5%;
+    gap: 58%;
+}
+.postssection .section1 .left{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.section1 .left .profilename{
+    display: flex;
+    flex-direction: column;
+    
+}
+.left .profilename div{
+    height: fit-content;
+
+}
+
+.postssection .section2{
+    border: solid 1px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+}
+.section2 .video_post{
+    position: absolute; 
+    right: 10%; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* for messenger page*/
+.mainMessengerBox{
+    border: solid 1px rgb(210, 210, 210);
+    height: 31rem;
+    width: 59rem;
+    border-radius: 9px;
+    position: absolute;
+    left: 12%;
+    top: 13%;
+    
+}
+.leftMessengerBox{
+    border: solid 1px rgb(210, 210, 210);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    margin: 0;
+    width: 22rem;
+    height: 31rem;
+    border-right: none;
+}
+#leftMessengerBox{
+    border-left: none;
+    border-right: solid 1px rgb(210, 210, 210);
+    border-top: none;
+    border-bottom: none;
+}
+#firstBox{
+    border-bottom: solid 1px rgb(210, 210, 210);
+    height: 4rem;
+    width: 22rem;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+}
+#rightMessengerBox{
+    position: absolute;
+    border: solid 1px rgb(210, 210, 210);
+    width: 36.9rem;
+    height: 31rem;
+    right: 0%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+#rightMessengerBox img{
+    position: absolute;
+    right: 35%;
+}
+#rightMessengerBox .one{
+    position: absolute;
+    right: 35%;
+    top: 46%;
+    font-size: 160%;
+    font-weight: 300;
+}
+#rightMessengerBox .two{
+    position: absolute;
+    right: 18%;
+    top: 56%;
+    font-size: 92%;
+    color: rgb(146, 146, 146);
+}
+#rightMessengerBox button{
+    position: absolute;
+    top: 69%;
+    right: 40%;
+    padding: 10px;
+    color: #ffffff;
+    background-color:#1da1f2;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* for modal create post*/
+.modalNewPost{
+    border: solid 1px rgb(210, 210, 210);
+    width: 23rem;
+    height: 26rem;
+    position: absolute;
+    top: 17%;
+    right: 36%;
+    border-radius: 9px;
+    display: none;
+}
+.modalNewPost #header{
+    border: solid 1px rgb(210, 210, 210);
+    height: 10%;
+    width: 23rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* for the profile page */
+.mainContainer{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 17%;
+    top: 16%;
+    display: flex;
+    flex-direction: column;
+
+}
+.profileContainer{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.profilePic{
+    border: solid 1px black;
+    width: 9.5rem;
+    height: 9.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 18%;
+    top: 17%;
+    overflow: hidden;
+}
+.profilePic img{
+    
+    right: 11%;
+    top: 12%;
+    height: 7rem;
+    width: 7rem;
+    
+}
+.profileDeets{
+    padding-top: 0%;
+    width: 38rem;
+    height: fit-content;
+    
+    top: 17%;
+    left: 39%;
+    
+}
+.profileDeets .first{
+    display: flex;
+    flex-direction: row;
+    gap: 1.4rem;
+    align-items: center;
+    width: 38rem;
+}
+.profileDeets .first .username{
+    border: none;
+    left: 0%;
+    top: 3%;
+    width: fit-content;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0%;
+    font-size: 150%;
+    font-weight: 300;
+
+}
+.profileDeets .first .edit{
+    padding: 6.5px;
+    border: solid 1px rgb(210, 210, 210);
+    width: fit-content;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.profileDeets .first button{
+    padding: 5px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.profileDeets .second{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+    padding-left: 0%;
+    width: 38rem;
+}
+.profileDeets .second .list1{
+    width: fit-content;
+    height: fit-content;
+    font-weight: 500;
+}
+.profileDeets .second .list2, .list3{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.profileDeets .third{
+    width: 38rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 0%;
+    
+}
+.profileDeets .third .name{
+    height: 20px;
+    margin: 0;
+}
+.mainContainer .profileStories{
+    
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    flex-wrap: nowrap;
+    width: 52.6rem;
+    gap: 2rem;
+}
+.profileStories::-webkit-scrollbar{
+    display: none;
+}
+.profileStories div{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
+}
+
+/* for the posts, reel and tagged part of the page*/
+
+.contentMenu{
+    display: flex;
+    flex-direction: column;
+    
+}
+#contentMenu{
+    border-top: solid 1px rgb(210, 210, 210);
+   
+}
+.contentMenu #menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 80%;
+    gap: 30px; 
+    margin: 0;
+    
+}
+.contentMenu #menu li{
+    border-top: solid 1px #ffffff;
+}
+.contentMenu #menu li a{
+    cursor: pointer;
+    color: rgb(162, 162, 162);
+    font-weight: 500;
+}
+.contentMenu #menu li:target-within{
+    border-top: solid black;
+}
+.contentVideos{
+    
+    padding-bottom: 1rem;
+    width: 52.5rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* for the settings page..*/
+.settingcont{
+    border: solid 1px rgb(210, 210, 210);
+    background-color: #ffffff;
+    border-radius: 4px;
+    width: 59rem;
+    height: fit-content;
+    margin-left: 13%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+
+}
+.settingbar{
+    border: none;
+    border-right: solid 1px rgb(210, 210, 210);
+    display: flex;
+    flex-direction: column;
+    height: 129.7vh;
+    width: 40%;
+    
+    
+}
+.settingbar a{
+    cursor: pointer;
+    border: none;
+    height: 3.3rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 2.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+    font-weight: 400;
+}
+.settingbar a:hover{
+    background-color: #f7f7f7;
+}
+
+.settingbar .profacc:hover{
+    background-color: #ffffff;
+    
+}
+.settingcontent{
+    border: none;
+    width: 100%;
+    height: fit-content;
+}
+#changeprofile{
+    display: none;
+}
+
+/* this is the the pop up (modal) when clicking  the profile image on the topbar.. */
+.settingprofilemodal{
+    
+    border: solid 1px rgb(210, 210, 210);
+    border-radius: 7px;
+    background-color: #ffffff;
+    height: fit-content;
+    width: 14.5rem;
+    float: right;
+    margin-top: 4rem;
+}
+.settingprofilemodal div{
+    cursor: pointer;
+    font-weight: 400;
+    
+}
+.settingprofilemodal div:hover{
+    background-color: #f4f4f4;
+}
+.settingprofilemodal div a{
+    text-decoration: none;
+    color: black;
+}
+
+/* This is for the apps and websites setting..*/
+.appsoptions div{
+    border-bottom:solid 1px rgb(210, 210, 210);
+    color: rgb(210, 210, 210);
+    width:12rem;
+    display:flex;
+    justify-content:center;
+    padding-bottom:0.9rem;
+    font-weight:500;
+}
+.appsoptions .active{
+    color: black;
+    border-bottom:solid 1px black;
+}

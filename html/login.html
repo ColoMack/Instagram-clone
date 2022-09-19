@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+     
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <title>Log in..instagram2.0</title>
+</head>
+<body>
+    <div class="loginBox">
+        <img src="/images/Instagram-Logo.png" alt="IGlogo">
+        <input id="email1" type="text" placeholder="Email" required>
+        <input id="password1" type="password" placeholder="Password" required>
+        <button id="login" class="login">Log in</button>
+        <button class="btn btn-primary" style="display: none;" id="spinner" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+        </button>
+
+        <div class="alert alert-danger" id="reseterror" style="display: none;" role="alert"></div>     
+
+        <p style="font-size: 80%; color:rgb(98, 98, 98)">OR</p>
+        <button class="signupFB">Log in with Facebook</button>
+        <hr>
+        
+        <a style="cursor: pointer;" href="" class="forgot"><p>Forgot Password?</p></a>
+        <p>Don't have an account? <a href="/html/signup.html" class="dont">Sign up</a></p>
+        <p class="terms">© 2022 Instagram from Meta</p>
+        
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/login.js"></script>
+    
+</body>
+</html>

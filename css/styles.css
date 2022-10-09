@@ -226,18 +226,19 @@ body{
     flex-direction: column;
     border-radius: 6px;
     margin-top: 10px;
+    margin-bottom: 5rem;
     width: 28.5rem;
-    height: 40rem;
+    height: fit-content;
+    
 }
 
 .postssection .section1{
     display: flex;
     flex-direction: row;
-    border: solid 1px;
     height: fit-content;
     align-items: center;
     padding: 2.5%;
-    gap: 58%;
+    justify-content: space-between;
 }
 .postssection .section1 .left{
     display: flex;
@@ -255,7 +256,6 @@ body{
 }
 
 .postssection .section2{
-    border: solid 1px;
     height: fit-content;
     display: flex;
     flex-direction: column;

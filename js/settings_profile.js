@@ -1,14 +1,13 @@
 firebase.auth().onAuthStateChanged((user)=>{
 
     if (user){
-        let changeprofile = document
-        let userID = user.uid;
-        console.log(userID);
 
-        if (document.changeprofile != null){
+        let userID = user.uid;
+        
+        
+            
             // for changing the profile photo of the user..
-            console.log("field is not empty");
-            document.getElementById("submitprofilechanges").addEventListener("click", function() {
+            document.getElementById("submitprofilechanges").onclick = function(){
                 let choosenprofilepic = document.getElementById("changeprofile").files[0];
                 let storageRef = firebase.storage().ref();
                 let uploadtask = storageRef.child("profile_Photo").child(Math.random() + choosenprofilepic.name).put(choosenprofilepic);
@@ -46,21 +45,8 @@ firebase.auth().onAuthStateChanged((user)=>{
                     })
                 }
                 )
-            })
-        } else{
-            console.log("field is empty");
-        }
-        
-        
-        
-        firebase.firestore().collection("credentials").doc(userID).get().then((doc)=>{
-
-            let profilepic = doc.data().theProfilepicID;
-            document.getElementById("profilePhoto").src = profilepic
-        })
-
-        
-
+            }
+            
     } else{
 
         window.location = "login.html"
